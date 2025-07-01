@@ -1,6 +1,4 @@
 import React from 'react';
-import { FaLaptopCode, FaMobileAlt, FaPaintBrush, FaCommentDots, FaCloud, FaWrench } from 'react-icons/fa';
-import ContactSection from '../components/ContactSection';
 
 export const HomePage: React.FC = () => {
   return (
