@@ -35,7 +35,7 @@ export const HomePage: React.FC = () => {
             Soluciones tecnológicas a tu medida
           </h2>
           <div className="font-inter font-medium text-[32px] leading-[100%] text-center text-black mb-12 w-full max-w-[1290px] mt-4">
-            Impulsamos tu negocio con software innovador, eficiente y seguro.
+            Impulsamos tu negocio con  software innovador, eficiente y seguro.
           </div>
           {/* Aquí irán los tres cards */}
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mt-8">
