@@ -33,13 +33,7 @@ const NavbarDefault: React.FC = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={
-                link.label === 'Home'
-                  ? 'font-irish text-black text-[24px] leading-[24px] transition-colors duration-200'
-                  : ['Quiénes Somos', 'Servicios', 'Contacto'].includes(link.label)
-                    ? 'font-inder text-black text-[24px] leading-[24px] transition-colors duration-200'
-                    : 'font-medium text-black hover:text-blue-600 transition-colors duration-200'
-              }
+              className="font-inter font-normal text-[24px] leading-[24px] text-black text-center align-middle transition-colors duration-200 hover:text-blue-600"
             >
               {link.label}
             </Link>

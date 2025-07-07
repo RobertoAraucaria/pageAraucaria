@@ -33,13 +33,7 @@ const NavbarHome: React.FC = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={
-                link.label === 'Home'
-                  ? 'font-irish text-white text-[24px] leading-[24px] transition-colors duration-200'
-                  : ['Quiénes Somos', 'Servicios', 'Contacto'].includes(link.label)
-                    ? 'font-inder text-white text-[24px] leading-[24px] transition-colors duration-200'
-                    : 'font-medium text-white hover:text-blue-200 transition-colors duration-200'
-              }
+              className="font-inter font-normal text-[24px] leading-[24px] text-white text-center align-middle transition-colors duration-200 hover:text-blue-200"
             >
               {link.label}
             </Link>
@@ -80,7 +74,7 @@ const NavbarHome: React.FC = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-white text-2xl font-inder mb-8"
+                className="font-inter font-normal text-[24px] leading-[24px] text-white text-center align-middle mb-8 transition-colors duration-200 hover:text-blue-200"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

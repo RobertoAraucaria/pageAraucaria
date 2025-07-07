@@ -7,13 +7,13 @@ const ServicesPage: React.FC = () => {
       <NavbarDefault />
       {/* Título destacado */}
       <section className="w-full flex justify-center pt-24 pb-4 bg-[#F5F8FE]">
-        <div className="font-['Inter'] font-semibold text-[48px] leading-[100%] text-center text-[#270B7D] max-w-[1361px] w-full mb-10">
+        <div className="font-inter font-bold text-[48px] leading-[100%] text-center align-middle text-[#270B7D] max-w-[1361px] w-full mb-10">
           INNOVACION TECNOLOGICA AL SERVICIO DE TU CRECIMIENTO
         </div>
       </section>
       {/* Propósito */}
       <section className="w-full flex justify-center pb-8 bg-[#F5F8FE]">
-        <div className="font-imprima font-normal text-[32px] leading-[100%] text-center text-black max-w-[1304px] w-full">
+        <div className="font-inter font-normal text-[32px] leading-[100%] text-center align-middle text-black max-w-[1304px] w-full">
           Nuestro propósito es acompañar a empresas, emprendedores e instituciones en su proceso de transformación digital, brindando herramientas tecnológicas que potencien su desarrollo y optimicen su gestión.
         </div>
       </section>
@@ -24,42 +24,42 @@ const ServicesPage: React.FC = () => {
           {/* Tiendas Online */}
           <div className="w-full max-w-[340px] h-[120px] bg-[#61E7D9] border-2 border-[#117471] rounded-[16px] flex items-center px-4">
             <span className="mr-4 flex-shrink-0">
-              <img src="/images_src/assets/creciTecno/computer.png" alt="icono" className="w-8 h-8" />
+              <img src="/images_src/assets/creciTecno/tienda.png" alt="icono" className="w-8 h-8" />
             </span>
             <span className="text-black text-[20px] font-imprima font-normal text-center w-full">Tiendas Online</span>
           </div>
           {/* Aplicaciones Móviles */}
           <div className="w-full max-w-[340px] h-[120px] bg-[#61E7D9] border-2 border-[#117471] rounded-[16px] flex items-center px-4">
             <span className="mr-4 flex-shrink-0">
-              <img src="/images_src/assets/creciTecno/mobile.png" alt="icono" className="w-8 h-8" />
+              <img src="/images_src/assets/creciTecno/aplicaciones.png" alt="icono" className="w-8 h-8" />
             </span>
             <span className="text-black text-[20px] font-imprima font-normal text-center w-full">Aplicaciones Móviles</span>
           </div>
           {/* Capacitación */}
           <div className="w-full max-w-[340px] h-[120px] bg-[#61E7D9] border-2 border-[#117471] rounded-[16px] flex items-center px-4">
             <span className="mr-4 flex-shrink-0">
-              <img src="/images_src/assets/creciTecno/Group.png" alt="icono" className="w-8 h-8" />
+              <img src="/images_src/assets/creciTecno/capacitaciones.png" alt="icono" className="w-8 h-8" />
             </span>
             <span className="text-black text-[20px] font-imprima font-normal text-center w-full">Capacitación</span>
           </div>
           {/* Sitios Web Profesionales */}
           <div className="w-full max-w-[340px] h-[120px] bg-[#61E7D9] border-2 border-[#117471] rounded-[16px] flex items-center px-4">
             <span className="mr-4 flex-shrink-0">
-              <img src="/images_src/assets/creciTecno/computer.png" alt="icono" className="w-8 h-8" />
+              <img src="/images_src/assets/creciTecno/tienda.png" alt="icono" className="w-8 h-8" />
             </span>
             <span className="text-black text-[20px] font-imprima font-normal text-center w-full">Sitios Web Profesionales</span>
           </div>
           {/* Landing page para campañas */}
           <div className="w-full max-w-[340px] h-[120px] bg-[#61E7D9] border-2 border-[#117471] rounded-[16px] flex items-center px-4">
             <span className="mr-4 flex-shrink-0">
-              <img src="/images_src/assets/creciTecno/computer.png" alt="icono" className="w-8 h-8" />
+              <img src="/images_src/assets/creciTecno/tienda.png" alt="icono" className="w-8 h-8" />
             </span>
             <span className="text-black text-[20px] font-imprima font-normal text-center w-full">Landing page para campañas</span>
           </div>
           {/* Integraciones con Apis y herramientas externas */}
           <div className="w-full max-w-[340px] h-[120px] bg-[#61E7D9] border-2 border-[#117471] rounded-[16px] flex items-center px-4">
             <span className="mr-4 flex-shrink-0">
-              <img src="/images_src/assets/creciTecno/conec.png" alt="icono" className="w-8 h-8" />
+              <img src="/images_src/assets/creciTecno/integraciones.png" alt="icono" className="w-8 h-8" />
             </span>
             <span className="text-black text-[20px] font-imprima font-normal text-center w-full">Integraciones con Apis y herramientas externas</span>
           </div>

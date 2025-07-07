@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
           <Link to="/">
             <img src="/images_src/assets/logo2.png" alt="Logo" className="h-14 w-14 mr-4 bg-transparent shadow-none border-none rounded-full" />
           </Link>
-          <span className={`text-2xl font-bold ${linkColor}`}>Araucaria</span>
+          <span className={`font-inter font-normal text-[24px] leading-[24px] text-center align-middle text-gray-900`}>Araucaria</span>
         </div>
         {/* Links a la derecha (desktop) */}
         <div className="hidden md:flex space-x-6">
@@ -30,13 +30,7 @@ const Navbar: React.FC = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={
-                link.label === 'Home'
-                  ? `font-irish ${linkColor} text-[24px] leading-[24px] transition-colors duration-200`
-                  : ['Quiénes Somos', 'Servicios', 'Contacto'].includes(link.label)
-                    ? `font-inder ${linkColor} text-[24px] leading-[24px] transition-colors duration-200`
-                    : `font-medium ${linkColor} hover:text-blue-600 transition-colors duration-200`
-              }
+              className={`font-inter font-normal text-[24px] leading-[24px] text-center align-middle transition-colors duration-200 ${location.pathname === link.to ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
             >
               {link.label}
             </Link>

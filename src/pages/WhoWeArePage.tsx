@@ -5,7 +5,7 @@ const WhoWeArePage: React.FC = () => {
   return (
     <>
       <NavbarDefault />
-      <section className="w-full min-h-screen h-screen bg-[#F5F8FE] flex flex-col justify-center items-center pt-16 pb-0">
+      <section className="w-full min-h-screen bg-[#F5F8FE] flex flex-col justify-center items-center pt-16 pb-12">
         <div className="max-w-[1400px] mx-auto px-4">
           <h1 className="font-['Inter'] font-extrabold text-[48px] text-center leading-tight mb-6">
             <span className="text-[#2D1582]">Desarrollamos </span>
@@ -16,8 +16,10 @@ const WhoWeArePage: React.FC = () => {
           <p className="font-imprima font-normal text-[36px] text-black leading-[100%] max-w-[1212px] mb-12">
             En Araucaria somos un equipo multidisciplinario de desarrolladores, diseñadores, analistas y especialistas en tecnología, comprometidos con la calidad, la eficiencia y la mejora continua.
           </p>
+
+          {/* Tarjetas */}
           <div className="w-full flex flex-col md:flex-row gap-8 justify-center items-center mt-8">
-            <div className="bg-white rounded-2xl border-4 border-[#7B4AE2] p-6 max-w-[348px] w-full h-[240px] text-center shadow-md flex flex-col items-start">
+            <div className="bg-white rounded-2xl border-4 border-[#7B4AE2] p-6 max-w-[348px] w-full h-[240px] text-center shadow-md flex flex-col items-start mb-8 md:mb-0">
               <div className="font-imprima font-normal text-[20px] text-black leading-[100%] w-full mb-2 mt-2 text-center">Nuestra misión</div>
               <div className="font-imprima font-normal text-[20px] text-black leading-[100%] w-full text-center">Brindar soluciones tecnológicas que se adapten a las necesidades específicas de cada cliente, ayudándolos a optimizar procesos, mejorar su productividad y ofrecer experiencias digitales de alto nivel.</div>
             </div>
@@ -32,4 +34,4 @@ const WhoWeArePage: React.FC = () => {
   );
 };
 
-export default WhoWeArePage; 
+export default WhoWeArePage;

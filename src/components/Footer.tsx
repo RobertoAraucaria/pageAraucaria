@@ -1,4 +1,5 @@
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -9,17 +10,17 @@ const Footer: React.FC = () => {
           <span className="font-inter font-extrabold text-[40px] leading-[20px] text-center w-full text-black mb-4">ARAUCARIA</span>
           <span className="font-inter font-semibold text-[24px] leading-[20px] text-center w-full text-black mb-4">Argentina</span>
           <span className="font-inter font-semibold text-[24px] leading-[20px] text-center w-full text-black mb-0">Chile</span>
-          <img src="/images_src/assets/logo2.png" alt="Logo Araucaria" className="w-16 h-16 mt-2" />
+          
         </div>
         {/* Columna 2: Links útiles */}
         <div className="flex flex-col items-center w-full md:w-1/3">
           <span className="font-inter font-extrabold text-[24px] leading-[20px] text-center w-full text-black mb-4">Links útiles</span>
           <ul className="space-y-2">
-            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#" className="font-inter text-lg">Inicio</a></li>
-            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#" className="font-inter text-lg">Quienes Somos</a></li>
-            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#" className="font-inter text-lg">Servicios</a></li>
-            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#" className="font-inter text-lg">Tecnologías</a></li>
-            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#" className="font-inter text-lg">Contactanos</a></li>
+            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/" className="font-inter text-lg">Inicio</Link></li>
+            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/whoweare" className="font-inter text-lg">Quienes Somos</Link></li>
+            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/services" className="font-inter text-lg">Servicios</Link></li>
+            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#tecnologias" className="font-inter text-lg">Tecnologías</a></li>
+            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/contact" className="font-inter text-lg">Contactanos</Link></li>
           </ul>
         </div>
         {/* Columna 3: Redes sociales */}
