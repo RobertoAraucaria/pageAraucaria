@@ -1,6 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  e.preventDefault();
+  const el = document.getElementById('soluciones');
+  if (el) {
+    const y = el.getBoundingClientRect().top + window.pageYOffset - 80; // 80px de offset
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+};
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white w-full border-t border-gray-200">
@@ -19,7 +28,7 @@ const Footer: React.FC = () => {
             <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/" className="font-inter text-lg">Inicio</Link></li>
             <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/whoweare" className="font-inter text-lg">Quienes Somos</Link></li>
             <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/services" className="font-inter text-lg">Servicios</Link></li>
-            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#tecnologias" className="font-inter text-lg">Tecnologías</a></li>
+            <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><a href="#soluciones" className="font-inter text-lg" onClick={handleSmoothScroll}>Tecnologías</a></li>
             <li className="flex items-center gap-2"><img src="/images_src/assets/iconamoon_player.png" alt="icono" className="w-5 h-5" /><Link to="/contact" className="font-inter text-lg">Contactanos</Link></li>
           </ul>
         </div>

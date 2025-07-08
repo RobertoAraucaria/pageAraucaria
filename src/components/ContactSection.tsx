@@ -1,4 +1,6 @@
 import React from 'react';
+import WhatsAppButton from './WhatsAppButton';
+import EmailButton from './EmailButton';
 
 const ContactSection: React.FC = () => {
   return (
@@ -48,24 +50,33 @@ const ContactSection: React.FC = () => {
           <div className="flex items-center bg-[#E6F0FF] border-2 border-[#4A90E2] rounded-2xl px-6 py-4 shadow-sm min-h-[70px]">
             <img src="/images_src/assets/logoContac/location.png" alt="Ubicación" className="w-8 h-8 mr-4" />
             <div className="flex flex-col text-sm text-black">
-              <span>Córdoba - Argentina</span>
-              <span>Santiago de Chile - Chile</span>
+              <span className="font-medium">Córdoba - Argentina</span>
+              <span className="text-gray-600">Santiago de Chile - Chile</span>
             </div>
           </div>
-          {/* Card WhatsApp */}
-          <div className="flex items-center bg-[#E6F0FF] border-2 border-[#4A90E2] rounded-2xl px-6 py-4 shadow-sm min-h-[70px]">
-            <img src="/images_src/assets/logoContac/logoWhat.png" alt="WhatsApp" className="w-8 h-8 mr-4" />
-            <div className="flex flex-col text-sm text-black">
-              <span><a href="https://wa.me/5493515927458" target="_blank" rel="noopener noreferrer" className="underline">+54 9 351 5927458</a> - Fabiana</span>
-              <span>+56 9 93888939 - Roberto</span>
-            </div>
-          </div>
+          {/* Card WhatsApp - Fabiana */}
+          <WhatsAppButton 
+            phoneNumber="+54 9 351 5927458"
+            name="Fabiana"
+            country="Argentina"
+          />
           {/* Card Email */}
-          <div className="flex items-center bg-[#E6F0FF] border-2 border-[#4A90E2] rounded-2xl px-6 py-4 shadow-sm min-h-[70px]">
-            <img src="/images_src/assets/logoContac/logoCorreo.png" alt="Mail" className="w-8 h-8 mr-4 object-contain" />
-            <span className="text-sm text-black">xxxxxxxxx@gmail.com</span>
-          </div>
+          <EmailButton 
+            email="fabic452@gmail.com"
+            label="Email de contacto"
+          />
         </div>
+        
+        {/* Segunda fila: solo WhatsApp de Roberto centrado en pantallas grandes (comentado para uso futuro) 
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 mt-6">
+          <div className="hidden md:block"></div>
+          <WhatsAppButton 
+            phoneNumber="+56 9 93888939"
+            name="Roberto"
+            country="Chile"
+          />
+          <div className="hidden md:block"></div>
+        </div>*/}
       </section>
     </div>
   );
