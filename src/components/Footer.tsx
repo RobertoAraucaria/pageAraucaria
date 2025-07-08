@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
       {/* Div inferior */}
       <div className="w-full bg-[#1A1A4B] py-4 flex flex-col md:flex-row justify-between items-center px-4">
         <span className="font-inter font-semibold text-[24px] leading-[20px] text-center w-full text-white">©Copyright-2025</span>
-        <a href="#" className="text-white font-inter text-lg underline md:no-underline">Política de privacidad</a>
+        <a href="#" className="text-white font-inter text-lg underline md:no-underline"> Política de privacidad</a>
       </div>
     </footer>
   );
