@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -6,11 +6,9 @@ import { useInView } from 'react-intersection-observer';
 export const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const [showHero, setShowHero] = useState(false);
-  const [showCards, setShowCards] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setShowHero(true), 100);
-    setTimeout(() => setShowCards(true), 400);
   }, []);
 
   // Variants para animaciones
@@ -26,26 +24,6 @@ export const HomePage: React.FC = () => {
     hidden: { opacity: 0, x: 80 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.7 } }
   };
-  const fade = {
-    hidden: { opacity: 0 },
-    visible: (i = 0) => ({ opacity: 1, transition: { duration: 0.7, delay: 0.1 * i } })
-  };
-
-  // Variants para las cards
-  const cardVariants = [
-    {
-      initial: { opacity: 0, x: -80, y: 0 },
-      animate: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, delay: 0.1 } },
-    },
-    {
-      initial: { opacity: 0, x: 0, y: 80 },
-      animate: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, delay: 0.3 } },
-    },
-    {
-      initial: { opacity: 0, x: 80, y: 0 },
-      animate: { opacity: 1, x: 0, y: 0, transition: { duration: 0.7, delay: 0.5 } },
-    },
-  ];
 
   // HERO
   const { ref: heroRef, inView: heroInView } = useInView({ triggerOnce: false, threshold: 0.2 });
